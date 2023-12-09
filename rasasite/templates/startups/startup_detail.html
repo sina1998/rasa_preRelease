@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>{{ startup.name }}</h2>
+  <p>{{ startup.description }}</p>
+
+  <h3>Projects:</h3>
+  {% for project in projects %}
+    <p>{{ project.title }}</p>
+    <p>{{ project.description }}</p>
+    <!-- Add more project details as needed -->
+  {% endfor %}
+{% endblock %}
